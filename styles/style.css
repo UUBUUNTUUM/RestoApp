@@ -1,0 +1,141 @@
+@import './normalize.css';
+
+@font-face {
+	font-family: 'Inter';
+	src: url('./fonts/Inter-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Inter';
+	src: url('./fonts/Inter-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+.visually-unseen {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+	width: 1440px;
+	margin: auto;
+	padding-inline: 64px;
+}
+
+/* Header */
+
+.header {
+	display: flex;
+	align-items: center;
+	height: 72px;
+	background: linear-gradient(to right, #FEDD2C, #F9C201);
+	color: #555;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
+.header__menu-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.header__contacts-body {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.header__contacts-tel {
+	font-size: 18px;
+}
+
+.header__contacts-time {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+/* Header */
+
+/* Main */
+
+.section__header h1 {
+	line-height: 48px;
+	margin-block: 32px;
+}
+
+.menu-cards__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 32px;
+}
+
+.menu-card {
+	position: relative;
+	color: #fff;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.menu-card__title {
+	display: flex;
+	align-items: end;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+}
+
+.menu-card__title::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+}
+
+.menu-card__title h3 { 
+	margin: 16px;
+}
+
+/* Main */
+
